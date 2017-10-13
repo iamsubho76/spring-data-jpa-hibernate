@@ -6,8 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name="find_all_persons", query="select p from Person p")
 public class Person {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

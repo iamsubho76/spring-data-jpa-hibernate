@@ -1,3 +1,5 @@
+/*Schema update is automatically truggered by Spring Boot AutoConfiguration so we can safely rempve the create table query*/
+/*
 create table person
 (
    id integer not null,
@@ -5,7 +7,7 @@ create table person
    location varchar(255),
    birth_date timestamp,
    primary key(id)
-);
+);*/
 
 INSERT INTO PERSON (ID, NAME, LOCATION, BIRTH_DATE ) 
 VALUES(10001,  'Ranga', 'Hyderabad',sysdate());
